@@ -1,0 +1,151 @@
+@import 'https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700';
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-transform: uppercase;
+}
+
+/* Reset the default appearance */
+progress[value] {
+  -webkit-appearance: none;
+   appearance: none;
+   height: 35px;
+   width: 70%;
+}
+
+.header {
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+    background-image: url(../img/backgroundpicture.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.header-heading-group {
+    width: 43%;
+    margin: 175px auto;
+}
+
+.header-heading {
+    color: white;
+    font-size: 7.5em;
+    text-align: center;
+}
+
+.header-subtitle {
+    color: white;
+    font-size: 2.4em;
+    text-align: center;
+}
+
+
+.about-me {
+    width: 100%;
+    overflow: hidden;
+    text-align: center;
+}
+
+.about-me-heading {
+    font-size: 3.7em;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.about-me-icn {
+    margin: 0 auto;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 1px solid #444;
+    margin-bottom: 35px;
+}
+
+.about-me-info {
+    float: left;
+    width: 33%;
+    margin-top: 60px;
+}
+
+.about-me-info-text {
+    text-align: center;
+    padding: 0px 50px;
+    font-size: 18px;
+}
+
+.divider {
+    width: 20vw;
+    height: 3px;
+    border-bottom: 1px solid #000;
+    background-color: #5d5d5d;
+    margin: 0 auto;
+}
+
+.skill-left {
+    width: 50%;
+    float: left;
+}
+
+.skill-list {
+    list-style-type: none;
+    margin-top: 60px;
+    margin-bottom: 70px;
+}
+
+.skill-list-progress-bar[value]::-webkit-progress-bar {
+  background-color: #eee;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
+}
+
+.skill-list-progress-bar[value]::-webkit-progress-value {
+    border-radius: 4px;
+    background-color: red;
+    background: -webkit-linear-gradient(left, red , #a30000);
+    background: -o-linear-gradient(right, red, #a30000);
+    background: -moz-linear-gradient(right, red, #a30000);
+    background: linear-gradient(to right, red , #a30000);
+}
+
+.skill-list-item {
+    text-align: center;
+    margin: 5px 0;
+}
+
+.skill-list-item-paragraph {
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding-bottom: 5px;
+}
+
+
+@media screen and (max-width: 930px) {
+    .about-me-info {
+        width: 100%;
+    }
+
+    .about-me-info-text {
+        padding: 0px 80px;
+    }
+
+    .about-me-icn {
+        margin-bottom: 50px;
+    }
+
+    .skill-left {
+        width: 100%;
+    }
+}
