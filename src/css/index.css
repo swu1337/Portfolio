@@ -13,16 +13,15 @@ a:hover{
     text-decoration: none;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    text-transform: uppercase;
+button,
+input[type="submit"] {
+  border: 0;
+  box-shadow: none;
+  outline: none;
 }
 
-/* Reset the default appearance */
-progress[value] {
-  -webkit-appearance: none;
-   appearance: none;
-   height: 35px;
-   width: 70%;
+h1, h2, h3, h4, h5, h6 {
+    text-transform: uppercase;
 }
 
 .header {
@@ -52,13 +51,13 @@ progress[value] {
 }
 
 
-.about-me {
+.main-section {
     width: 100%;
     overflow: hidden;
     text-align: center;
 }
 
-.about-me-heading {
+.main-section-heading {
     font-size: 3.7em;
     text-align: center;
     padding-top: 50px;
@@ -88,9 +87,10 @@ progress[value] {
 .divider {
     width: 20vw;
     height: 3px;
-    border-bottom: 1px solid #000;
+    border-top: 1px solid #000;
     background-color: #5d5d5d;
     margin: 0 auto;
+     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
 }
 
 .skill-left {
@@ -104,16 +104,36 @@ progress[value] {
     margin-bottom: 70px;
 }
 
-.skill-list-progress-bar[value]::-webkit-progress-bar {
+/* Reset the default appearance */
+.skill-list-progress-bar {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+   appearance: none;
+   border: none;
+
+   height: 35px;
+   width: 70%;
+   border-radius: 5px;
+   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
+}
+
+.skill-list-progress-bar::-webkit-progress-bar {
   background-color: #eee;
   border-radius: 5px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
 }
 
-.skill-list-progress-bar[value]::-webkit-progress-value {
-    border-radius: 4px;
+.skill-list-progress-bar::-webkit-progress-value {
+    border-radius: 5px;
     background-color: red;
     background: -webkit-linear-gradient(left, red , #a30000);
+    background: -o-linear-gradient(right, red, #a30000);
+    background: linear-gradient(to right, red , #a30000);
+}
+
+.skill-list-progress-bar::-moz-progress-bar {
+    border-radius: 5px;
+    background-color: red;
     background: -o-linear-gradient(right, red, #a30000);
     background: -moz-linear-gradient(right, red, #a30000);
     background: linear-gradient(to right, red , #a30000);
@@ -129,6 +149,47 @@ progress[value] {
     font-weight: bold;
     text-transform: uppercase;
     padding-bottom: 5px;
+}
+
+
+.contact-form {
+    width: 75%;
+    background-color: #999;
+    margin: 0 auto;
+    margin-top: 40px;
+    overflow: hidden;
+}
+
+.form-table {
+    margin: 0 auto;
+    text-align: center;
+    width: 90%;
+    margin-top: 25px;
+}
+
+.form-label {
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.form-input {
+  width: 65%;
+  border: 1px solid #555;
+  color: #444;
+  padding: 10px;
+}
+
+.form-message {
+    width: 67%;
+}
+
+.form-submit {
+    padding: 15px 65px;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    background: #222;
 }
 
 

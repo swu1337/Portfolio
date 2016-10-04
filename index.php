@@ -12,8 +12,8 @@
                 <h1 class="header-subtitle">Front-End Developer</h1>
             </hgroup>
         </header>
-        <section class="about-me">
-            <h1 class="about-me-heading">about me</h1>
+        <section class="main-section">
+            <h1 class="main-section-heading">about me</h1>
             <div class="divider"></div>
             <div class="about-me-info">
                 <div class="about-me-icn">
@@ -58,8 +58,8 @@
                   </p>
             </div>
         </section>
-        <section class="about-me">
-            <h1 class="about-me-heading">skills</h1>
+        <section class="main-section">
+            <h1 class="main-section-heading">skills</h1>
             <div class="divider"></div>
             <div class="skill-left">
                 <ul class="skill-list">
@@ -109,6 +109,41 @@
                     </li>
                 </ul>
             </div>
+        </section>
+        <section class="main-section">
+            <h1 class="main-section-heading">contact</h1>
+            <div class="divider"></div>
+            <form class="contact-form" action="#" method="post">
+                <table class="form-table">
+                    <tr>
+                        <td><label class="form-label" for="name">Name:</label></td>
+                    </tr>
+                    <tr>
+                        <td><input id="name" class="form-input" type="text" name="name" placeholder="John" required /></td>
+                    </tr>
+                    <tr>
+                        <td><label class="form-label" for="email">E-Mail:</label></td>
+                    </tr>
+                    <tr>
+                        <td><input id="email" class="form-input" type="text" placeholder="example@gmail.com" name="email" required/></td>
+                    </tr>
+                    <tr>
+                        <td><label class="form-label" for="subject">Subject:</label></td>
+                    </tr>
+                    <tr>
+                        <td><input id="subject" class="form-input" type="text" placeholder="Subject" name="subject"/></td>
+                    </tr>
+                    <tr>
+                        <td><label class="form-label" for="message">Message:</label></td>
+                    </tr>
+                    <tr>
+                        <td><textarea id="message" class="form-message" rows="7" cols="56"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td><input class="form-submit btn" type="submit" value="Send"><td>
+                    </tr>
+                </table>
+            </form>
         </section>
     </body>
 </html>
