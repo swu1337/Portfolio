@@ -63,52 +63,7 @@
                 <p class="main-section-heading">skills</p>
                 <div class="divider"></div>
                 <div class="skill-wrapper">
-                    <ul class="skill-list">
-                        <li class="skill-list-item">
-                            <p class="skill-list-item-paragraph">HTML:</p>
-                            <progress class="skill-list-progress-bar" value="5" max="100"></progress>
-                        </li>
-                        <li class="skill-list-item">
-                            <p class="skill-list-item-paragraph">CSS:</p>
-                            <progress class="skill-list-progress-bar" value="10" max="100"></progress>
-                        </li>
-                        <li class="skill-list-item">
-                            <p class="skill-list-item-paragraph">Javascript:</p>
-                            <progress class="skill-list-progress-bar" value="15" max="100"></progress>
-                        </li>
-                        <li class="skill-list-item">
-                            <p class="skill-list-item-paragraph">Sass:</p>
-                            <progress class="skill-list-progress-bar" value="20" max="100"></progress>
-                        </li>
-                        <li class="skill-list-item">
-                            <p class="skill-list-item-paragraph">jQuery:</p>
-                            <progress class="skill-list-progress-bar" value="25" max="100"></progress>
-                        </li>
-                    </ul>
-                </div>
-                <div class="skill-wrapper">
-                    <ul class="skill-list">
-                        <li class="skill-list-item">
-                            <p class="skill-list-item-paragraph">AngularJS:</p>
-                            <progress class="skill-list-progress-bar" value="2" max="100"></progress>
-                        </li>
-                        <li class="skill-list-item">
-                            <p class="skill-list-item-paragraph">PHP:</p>
-                            <progress class="skill-list-progress-bar" value="4" max="100"></progress>
-                        </li>
-                        <li class="skill-list-item">
-                            <p class="skill-list-item-paragraph">Laravel:</p>
-                            <progress class="skill-list-progress-bar" value="6" max="100"></progress>
-                        </li>
-                        <li class="skill-list-item">
-                            <p class="skill-list-item-paragraph">Java:</p>
-                            <progress class="skill-list-progress-bar" value="8" max="100"></progress>
-                        </li>
-                        <li class="skill-list-item">
-                            <p class="skill-list-item-paragraph">SQL:</p>
-                            <progress class="skill-list-progress-bar" value="10" max="100"></progress>
-                        </li>
-                    </ul>
+                    <div class="skill-logo"><img class="skill-logo-img" src="src/img/languages/html5.svg" /></div>
                 </div>
             </section>
             <section class="main-section">
