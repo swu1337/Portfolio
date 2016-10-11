@@ -103,21 +103,24 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .skill-wrapper {
-    width: 50%;
-    float: left;
-    margin: 15px 0 0 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    width: 99vw;
+    margin: 0 auto;
 }
 
 .skill-logo {
     width: 175px;
     height: 175px;
-    overflow: hidden;
+    margin: 10px;
 }
 
 .skill-logo-img {
-    max-width: 100%;
-    max-height: 100%;
     display: block;
+    width: 175px;
+    height: auto;
+    max-height: 175px;
 }
 
 .contact-form {
@@ -179,7 +182,7 @@ h1, h2, h3, h4, h5, h6 {
     }
 
     .about-me-icn {
-        margin: 0px 0px 50px 0px;
+        margin: 0px auto 60px auto;
     }
 
     .skill-left {

@@ -64,6 +64,15 @@
                 <div class="divider"></div>
                 <div class="skill-wrapper">
                     <div class="skill-logo"><img class="skill-logo-img" src="src/img/languages/html5.svg" /></div>
+                    <div class="skill-logo"><img class="skill-logo-img" src="src/img/languages/angular-js.svg" /></div>
+                    <div class="skill-logo"><img class="skill-logo-img" src="src/img/languages/bower.svg" /></div>
+                    <div class="skill-logo"><img class="skill-logo-img" src="src/img/languages/css3.svg" /></div>
+                    <div class="skill-logo"><img class="skill-logo-img" src="src/img/languages/grunt.svg" /></div>
+                    <div class="skill-logo"><img class="skill-logo-img" src="src/img/languages/javascript.svg" /></div>
+                    <div class="skill-logo"><img class="skill-logo-img" src="src/img/languages/mysql.svg" /></div>
+                    <div class="skill-logo"><img class="skill-logo-img" src="src/img/languages/laravel.svg" /></div>
+                    <div class="skill-logo"><img class="skill-logo-img" src="src/img/languages/sass.svg" /></div>
+                    <div class="skill-logo"><img class="skill-logo-img" src="src/img/languages/php.svg" /></div>
                 </div>
             </section>
             <section class="main-section">
