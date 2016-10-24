@@ -13,11 +13,12 @@
                     <span class="header-subtitle">Front-End Developer</span>
                 </div>
             </header>
-            <section class="main-section">
+            <section class="main-section light-grey">
                 <p class="main-section-heading">about me</p>
                 <div class="divider"></div>
                 <div class="about-me-info">
                     <div class="about-me-icn">
+                        <p class="dump-icn">&#60;&#47;&#62;</p>
                     </div>
                     <p class="about-me-info-text">
                         Lorem ipsum dolor sit amet,
@@ -32,6 +33,7 @@
                 </div>
                 <div class="about-me-info">
                     <div class="about-me-icn">
+                        <p class="dump-icn">&#60;&#47;&#62;</p>
                     </div>
                     <p class="about-me-info-text">
                         Lorem ipsum dolor sit amet,
@@ -46,6 +48,7 @@
                 </div>
                 <div class="about-me-info">
                     <div class="about-me-icn">
+                        <p class="dump-icn">&#60;&#47;&#62;</p>
                     </div>
                      <p class="about-me-info-text">
                          Lorem ipsum dolor sit amet,
@@ -95,19 +98,21 @@
                     </li>
                 </ul>
             </section>
-            <section class="main-section">
-                <p class="main-section-heading">contact</p>
-                <div class="divider"></div>
+            <section class="main-section grey">
                 <form class="contact-form" action="#" method="post">
-                    <label class="form-label" for="name">Name:</label>
-                    <input id="name" class="form-input" type="text" name="name" placeholder="John" required />
-                    <label class="form-label" for="email">E-Mail:</label>
-                    <input id="email" class="form-input" type="text" placeholder="example@gmail.com" name="email" required/>
-                    <label class="form-label" for="subject">Subject:</label>
-                    <input id="subject" class="form-input" type="text" placeholder="Subject" name="subject"/>
-                    <label class="form-label" for="message">Message:</label>
-                    <textarea id="message" class="form-message" rows="6" placeholder="some message..."></textarea>
-                    <input class="form-submit btn" type="submit" value="Send">
+                    <p class="main-section-heading">let's talk</p>
+                    <div class="divider"></div>
+                    <div class="form-wrapper">
+                        <label class="form-label" for="name">Name:</label>
+                        <input id="name" class="form-input" type="text" name="name" placeholder="John" required />
+                        <label class="form-label" for="email">E-Mail:</label>
+                        <input id="email" class="form-input" type="text" placeholder="example@gmail.com" name="email" required/>
+                        <label class="form-label" for="subject">Subject:</label>
+                        <input id="subject" class="form-input" type="text" placeholder="Subject" name="subject"/>
+                        <label class="form-label" for="message">Message:</label>
+                        <textarea id="message" class="form-message" rows="6" placeholder="some message..."></textarea>
+                        <input class="form-submit btn" type="submit" value="Send">
+                    </div>
                 </form>
             </section>
             <script src="src/js/index.js" type="text/javascript"></script>

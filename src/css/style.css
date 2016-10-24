@@ -28,6 +28,14 @@ h1, h2, h3, h4, h5, h6 {
     text-transform: uppercase;
 }
 
+.light-grey {
+    background-color: #efefef;
+}
+
+.grey {
+    background-color: #b3b3b3;
+}
+
 .header {
     overflow: hidden;
     width: 100%;
@@ -62,7 +70,7 @@ h1, h2, h3, h4, h5, h6 {
     width: 100%;
     overflow: hidden;
     text-align: center;
-    margin: 40px 0 0 0;
+    padding: 35px 0 60px 0;
 }
 
 .main-section-heading {
@@ -84,7 +92,11 @@ h1, h2, h3, h4, h5, h6 {
 .about-me-info {
     float: left;
     width: 33%;
-    margin-top: 60px;
+    margin-top: 40px;
+}
+.dump-icn {
+    font-size: 5em;
+    margin-top: 23px;
 }
 
 .about-me-info-text {
@@ -107,7 +119,7 @@ h1, h2, h3, h4, h5, h6 {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
-    align-content: center;
+    align-content: flex-start;
     margin: 50px auto 0 auto;
     list-style: none;
 }
@@ -127,11 +139,16 @@ h1, h2, h3, h4, h5, h6 {
 
 .contact-form {
     width: 65%;
-    background-color: #e2e2e2;
     margin: 40px auto 50px auto;
     overflow: hidden;
+    background-color: #fff;
 }
 
+.form-wrapper {
+    width: 50%;
+    margin: 45px auto 0 auto;
+    text-align: left;
+}
 
 .form-label {
     display: block;
@@ -141,19 +158,57 @@ h1, h2, h3, h4, h5, h6 {
     padding: 5px 0px;
 }
 
+.form-input::-webkit-input-placeholder {
+    font-style: italic;
+    color: #444;
+}
+
+.form-input::-moz-placeholder {
+    font-style: italic;
+    color: #444;
+}
+
+.form-input:-ms-input-placeholder {
+    font-style: italic;
+    color: #444;
+}
+
+.form-input:-moz-placeholder {
+    font-style: italic;
+    color: #444 ;
+}
+
 .form-label:nth-child(1) {
-    margin: 20px 0px 0px 0px;
+    margin-top: 20px;
 }
 
 .form-input {
-    margin: 0 auto;
     display: block;
-    width: 40%;
-    font-size: 16px;
+    width: 90%;
+    font-size: 18px;
+    border: 2px solid #444;
+    padding: 8px 4%;
+    margin-bottom: 10px;
+}
+
+.form-message::-webkit-input-placeholder {
     font-style: italic;
-    border: none;
-    color: #222;
-    padding: 9px 11px;
+    color: #444;
+}
+
+.form-message::-moz-placeholder {
+    font-style: italic;
+    color: #444;
+}
+
+.form-message:-ms-input-placeholder {
+    font-style: italic;
+    color: #444;
+}
+
+.form-message:-moz-placeholder {
+    font-style: italic;
+    color: #444 ;
 }
 
 .form-message {
@@ -161,9 +216,9 @@ h1, h2, h3, h4, h5, h6 {
     font-style: italic;
     margin: 0 auto 25px auto;
     resize: none;
-    padding: 9px 11px;
-    border: none;
-    width: 40%;
+    padding: 9px 4%;
+    border: 2px solid #444;
+    width: 90%;
 }
 
 .form-submit {
@@ -172,32 +227,74 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 18px;
     background: #333;
     text-transform: uppercase;
+    margin-bottom: 30px;
 }
 
-
-@media screen and (max-width: 930px) {
+@media screen and (max-width: 900px) {
     .about-me-info {
         width: 100%;
     }
 
     .about-me-info-text {
-        padding: 0px 80px;
+        padding: 0px 50px;
     }
 
     .about-me-icn {
         margin: 0px auto 60px auto;
     }
+}
+
+@media screen and (max-width: 768px) {
 
     .skill-left {
         width: 100%;
     }
 
     .skill-wrapper {
+        width: 445px;
+        align-items: center;
+    }
+
+    .skill-logo {
+        width: 200px;
+        height: 200px;
+        margin: 10px;
+    }
+
+    .skill-logo-img {
+        display: block;
+        width: 200px;
+        height: auto;
+        max-height: 200px;
+    }
+
+    .divider {
+        width: 40vw;
+    }
+}
+
+@media screen and (max-width: 414px) {
+
+    .header-heading-group {
+        width: 95%;
+    }
+
+    .header-heading {
+        font-size: 4.5em;
+    }
+
+    .skill-wrapper {
+        margin: 15px;
         width: 100%;
-        flex-flow: column-reverse wrap;
-        justify-content: center;
-        align-content: center;
-        margin: 50px auto 0 auto;
-        list-style: none;
+        flex-flow: row wrap;
+        align-items: center;
+    }
+
+    .contact-form {
+        width: 100%;
+    }
+
+    .form-wrapper {
+        width: 85%;
     }
 }
