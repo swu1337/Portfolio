@@ -62,18 +62,38 @@
             <section class="main-section">
                 <p class="main-section-heading">skills</p>
                 <div class="divider"></div>
-                <div class="skill-wrapper">
-                    <div class="skill-logo"><img class="skill-logo-img" src="src/img/languages/html5.svg" /></div>
-                    <div class="skill-logo"><img class="skill-logo-img" src="src/img/languages/angular-js.svg" /></div>
-                    <div class="skill-logo"><img class="skill-logo-img" src="src/img/languages/bower.svg" /></div>
-                    <div class="skill-logo"><img class="skill-logo-img" src="src/img/languages/css3.svg" /></div>
-                    <div class="skill-logo"><img class="skill-logo-img" src="src/img/languages/grunt.svg" /></div>
-                    <div class="skill-logo"><img class="skill-logo-img" src="src/img/languages/javascript.svg" /></div>
-                    <div class="skill-logo"><img class="skill-logo-img" src="src/img/languages/mysql.svg" /></div>
-                    <div class="skill-logo"><img class="skill-logo-img" src="src/img/languages/laravel.svg" /></div>
-                    <div class="skill-logo"><img class="skill-logo-img" src="src/img/languages/sass.svg" /></div>
-                    <div class="skill-logo"><img class="skill-logo-img" src="src/img/languages/php.svg" /></div>
-                </div>
+                <ul class="skill-wrapper">
+                    <li class="skill-logo">
+                        <img class="skill-logo-img" src="src/img/languages/html5.svg" />
+                    </li>
+                    <li class="skill-logo">
+                        <img class="skill-logo-img" src="src/img/languages/angular-js.svg" />
+                    </li>
+                    <li class="skill-logo">
+                        <img class="skill-logo-img" src="src/img/languages/bower.svg" />
+                    </li>
+                    <li class="skill-logo">
+                        <img class="skill-logo-img" src="src/img/languages/css3.svg" />
+                    </li>
+                    <li class="skill-logo">
+                        <img class="skill-logo-img" src="src/img/languages/grunt.svg" />
+                    </li>
+                    <li class="skill-logo">
+                        <img class="skill-logo-img" src="src/img/languages/javascript.svg" />
+                    </li>
+                    <li class="skill-logo">
+                        <img class="skill-logo-img" src="src/img/languages/mysql.svg" />
+                    </li>
+                    <li class="skill-logo">
+                        <img class="skill-logo-img" src="src/img/languages/laravel.svg" />
+                    </li>
+                    <li class="skill-logo">
+                        <img class="skill-logo-img" src="src/img/languages/sass.svg" />
+                    </li>
+                    <li class="skill-logo">
+                        <img class="skill-logo-img" src="src/img/languages/php.svg" />
+                    </li>
+                </ul>
             </section>
             <section class="main-section">
                 <p class="main-section-heading">contact</p>

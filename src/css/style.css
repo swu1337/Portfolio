@@ -103,11 +103,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .skill-wrapper {
+    width: 75%;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
-    width: 99vw;
-    margin: 0 auto;
+    align-content: center;
+    margin: 50px auto 0 auto;
+    list-style: none;
 }
 
 .skill-logo {
@@ -169,6 +171,7 @@ h1, h2, h3, h4, h5, h6 {
     color: #fff;
     font-size: 18px;
     background: #333;
+    text-transform: uppercase;
 }
 
 
@@ -187,5 +190,14 @@ h1, h2, h3, h4, h5, h6 {
 
     .skill-left {
         width: 100%;
+    }
+
+    .skill-wrapper {
+        width: 100%;
+        flex-flow: column-reverse wrap;
+        justify-content: center;
+        align-content: center;
+        margin: 50px auto 0 auto;
+        list-style: none;
     }
 }
