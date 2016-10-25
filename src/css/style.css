@@ -160,22 +160,22 @@ h1, h2, h3, h4, h5, h6 {
 
 .form-input::-webkit-input-placeholder {
     font-style: italic;
-    color: #444;
+    color: #888;
 }
 
 .form-input::-moz-placeholder {
     font-style: italic;
-    color: #444;
+    color: #888;
 }
 
 .form-input:-ms-input-placeholder {
     font-style: italic;
-    color: #444;
+    color: #888;
 }
 
 .form-input:-moz-placeholder {
     font-style: italic;
-    color: #444 ;
+    color: #888;
 }
 
 .form-label:nth-child(1) {
@@ -193,27 +193,27 @@ h1, h2, h3, h4, h5, h6 {
 
 .form-message::-webkit-input-placeholder {
     font-style: italic;
-    color: #444;
+    color: #888;
 }
 
 .form-message::-moz-placeholder {
     font-style: italic;
-    color: #444;
+    color: #888;
 }
 
 .form-message:-ms-input-placeholder {
     font-style: italic;
-    color: #444;
+    color: #888;
 }
 
 .form-message:-moz-placeholder {
     font-style: italic;
-    color: #444 ;
+    color: #888;
 }
 
 .form-message {
+    font-size: 18px;
     display: block;
-    font-style: italic;
     margin: 0 auto 25px auto;
     resize: none;
     padding: 9px 4%;
@@ -222,12 +222,16 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .form-submit {
-    padding: 8px 50px;
+    padding: 9px 45px;
     color: #fff;
     font-size: 18px;
     background: #333;
     text-transform: uppercase;
     margin-bottom: 30px;
+}
+
+.form-submit:hover{
+    background: #420909;
 }
 
 @media screen and (max-width: 900px) {

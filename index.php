@@ -99,22 +99,23 @@
                 </ul>
             </section>
             <section class="main-section grey">
-                <form class="contact-form" action="#" method="post">
+                <form class="contact-form" action="src/php/mail.php" method="post">
                     <p class="main-section-heading">let's talk</p>
                     <div class="divider"></div>
                     <div class="form-wrapper">
                         <label class="form-label" for="name">Name:</label>
                         <input id="name" class="form-input" type="text" name="name" placeholder="John" required />
                         <label class="form-label" for="email">E-Mail:</label>
-                        <input id="email" class="form-input" type="text" placeholder="example@gmail.com" name="email" required/>
+                        <input id="email" class="form-input" type="email" placeholder="example@gmail.com" name="email" required/>
                         <label class="form-label" for="subject">Subject:</label>
-                        <input id="subject" class="form-input" type="text" placeholder="Subject" name="subject"/>
+                        <input id="subject" class="form-input" type="text" placeholder="Subject" name="subject" required/>
                         <label class="form-label" for="message">Message:</label>
-                        <textarea id="message" class="form-message" rows="6" placeholder="some message..."></textarea>
-                        <input class="form-submit btn" type="submit" value="Send">
+                        <textarea id="message" class="form-message" rows="6" name="message" placeholder="some message..." required></textarea>
+                        <button class="form-submit btn" type="submit">Send</button>
+                        <!-- <input type="submit" class="form-submit btn" value="Send" /> -->
                     </div>
                 </form>
             </section>
-            <script src="src/js/index.js" type="text/javascript"></script>
+            <script src="src/js/app.js" type="text/javascript"></script>
         </body>
     </html>
