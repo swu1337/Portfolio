@@ -110,12 +110,15 @@
                         <label class="form-label" for="subject">Subject:</label>
                         <input id="subject" class="form-input" type="text" placeholder="Subject" name="subject" required/>
                         <label class="form-label" for="message">Message:</label>
-                        <textarea id="message" class="form-message" rows="6" name="message" placeholder="some message..." required></textarea>
+                        <textarea id="message" class="form-message" rows="6" name="message" placeholder="Let's talk..." required></textarea>
                         <button class="form-submit btn" type="submit">Send</button>
                         <!-- <input type="submit" class="form-submit btn" value="Send" /> -->
                     </div>
                 </form>
             </section>
+            <footer class="footer">
+                <p class="footer-paragraph">Steven Wu Represent</p>
+            </footer>
             <script src="src/js/app.js" type="text/javascript"></script>
         </body>
     </html>

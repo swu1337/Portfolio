@@ -94,6 +94,7 @@ h1, h2, h3, h4, h5, h6 {
     width: 33%;
     margin-top: 40px;
 }
+
 .dump-icn {
     font-size: 5em;
     margin-top: 23px;
@@ -183,12 +184,21 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .form-input {
+    font-family: 'Roboto Condensed', sans-serif;
     display: block;
     width: 90%;
     font-size: 18px;
     border: 2px solid #444;
     padding: 8px 4%;
     margin-bottom: 10px;
+}
+
+.success {
+    border: 2px solid #11d211;
+}
+
+.error {
+    border: 2px solid #ff0000;
 }
 
 .form-message::-webkit-input-placeholder {
@@ -212,6 +222,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .form-message {
+    font-family: 'Roboto Condensed', sans-serif;
     font-size: 18px;
     display: block;
     margin: 0 auto 25px auto;
@@ -231,7 +242,21 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .form-submit:hover{
-    background: #420909;
+    background-color: #ff3939;
+    cursor: pointer;
+}
+
+.footer {
+    width: 100%;
+    background-color: #bb2222;
+    border-top: 2px solid #fff;
+}
+
+.footer-paragraph {
+    font-size: 18px;
+    color: #fff;
+    padding: 14px;
+    text-align: center;
 }
 
 @media screen and (max-width: 900px) {

@@ -1,5 +1,7 @@
 <?php
+header('Content-Type: application/json');
+
     if(isset($_POST)) {
-        echo json_encode($_POST);
+        echo "Geert is een noob";
     }
 ?>
