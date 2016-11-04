@@ -2,6 +2,7 @@
     <html lang="en">
         <head>
             <title>Steven Wu</title>
+            <link rel="icon" href="favicon.ico">
             <meta name="viewport" content="width=device-width, initial-scale=1">
             <link rel="stylesheet" type="text/css" href="src/css/vendor/normalize.css">
             <link rel="stylesheet" type="text/css" href="src/css/style.css">
@@ -99,7 +100,7 @@
                 </ul>
             </section>
             <section class="main-section grey">
-                <form class="contact-form" action="src/php/mail.php" method="post">
+                <form class="contact-form" action="src/php/mail.php" method="post" autocomplete="off">
                     <p class="main-section-heading">let's talk</p>
                     <div class="divider"></div>
                     <div class="form-wrapper">
