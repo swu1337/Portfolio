@@ -113,7 +113,6 @@
                         <label class="form-label" for="message">Message:</label>
                         <textarea id="message" class="form-message" rows="6" name="message" placeholder="Let's talk..." required></textarea>
                         <button class="form-submit btn" type="submit">Send</button>
-                        <!-- <input type="submit" class="form-submit btn" value="Send" /> -->
                     </div>
                 </form>
             </section>

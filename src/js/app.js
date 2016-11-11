@@ -68,7 +68,7 @@
     //     checkInput(_regexString, e.target);
     // }, false);
     //TODO: Remove click event listener since when press tabbing its notwokring
-    form.addEventListener('mouseover', function(e) {
+    form.addEventListener('click    ', function(e) {
         console.log("Hi");
         var input = e.target || e.srcElement;
         if(input.nodeName === 'INPUT' || input.nodeName === 'TEXTAREA') {
