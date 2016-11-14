@@ -5,11 +5,20 @@ const concat = require('gulp-concat');
 const uglify = require('gulp-uglify');
 const pump = require('pump');
 const babel = require('gulp-babel');
+const rename = require('gulp-rename');
+const autoprefixer = require('gulp-autoprefixer');
+const sourcemaps = require('gulp-sourcemaps');
 
 gulp.task('sass', () =>
     gulp.src('src/scss/style.scss')
-        .pipe(sass())
-        .pipe(gulp.dest('src/css/test.css'))
+        .pipe(sourcemaps.init())
+        .pipe(sass()).on('error', sass.logError)
+        .pipe(autoprefixer({
+            browsers: ['last 2 versions', '> 5%'],
+            cascade: false
+            }))
+        .pipe(sourcemaps.write('src/scss/maps'))
+        .pipe(gulp.dest('src/css/test'))
         .pipe(browserSync.reload({
             stream: true
         }))
@@ -23,27 +32,25 @@ gulp.task('browserSync', function() {
 
 gulp.task('concat', () =>
     gulp.src('src/js/**/*.js')
+        .pipe(sourcemaps.init())
         .pipe(concat('app.js'))
+        .pipe(sourcemaps.write('src/js/maps'))
         .pipe(gulp.dest('dist/js/'))
 );
 
-// gulp.task('uglify', () =>
-//     pump([
-//         gulp.src('dist/js/app.js'),
-//         uglify('app.min.js'),
-//         gulp.dest('dist/js/')
-//     ])
-// );
-
-gulp.task('uglify', function() {
-    return gulp.src(['dist/js/app.js'])
+gulp.task('uglify', () =>
+    gulp.src('dist/js/app.js')
+        .pipe(sourcemaps.init())
         .pipe(babel({presets: ['es2015']}))
-        .pipe(uglify('app.min.js').on('error', function(e){
-     console.log(e);
-}))
-.pipe(gulp.dest("/dist/"))
-});
+        .pipe(uglify().on('error', function(e) {
+            console.log(e);
+        }))
+        .pipe(rename('app.min.js'))
+        .pipe(sourcemaps.write('src/js/maps'))
+        .pipe(gulp.dest('dist/js/'))
+);
 
-gulp.task('watch', ['browserSync', 'sass'], () =>
-    gulp.watch('src/scss/**/*.+(scss|sass)', ['sass'])
+gulp.task('watch', ['browserSync', 'sass', 'concat'], () => {
+    gulp.watch('src/scss/**/*.+(scss|sass)', ['sass']),
+    gulp.watch('src/js/**/*.js', ['concat'])}
 );
