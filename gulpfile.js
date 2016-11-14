@@ -17,7 +17,7 @@ gulp.task('sass', () =>
             browsers: ['last 2 versions', '> 5%'],
             cascade: false
             }))
-        .pipe(sourcemaps.write('src/scss/maps'))
+        .pipe(sourcemaps.write('/maps'))
         .pipe(gulp.dest('src/css/test'))
         .pipe(browserSync.reload({
             stream: true
@@ -52,5 +52,5 @@ gulp.task('uglify', () =>
 
 gulp.task('watch', ['browserSync', 'sass', 'concat'], () => {
     gulp.watch('src/scss/**/*.+(scss|sass)', ['sass']),
-    gulp.watch('src/js/**/*.js', ['concat'])}
-);
+    gulp.watch('src/js/**/*.js', ['concat'])
+});

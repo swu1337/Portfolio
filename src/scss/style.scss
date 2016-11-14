@@ -1,9 +1,13 @@
 // Vendor
 @import 'vendor/_normalize.scss';
 
+// Functions
+@import 'functions/_bem-functions';
+
 // Mixins
 @import 'mixins/_position.scss';
 @import 'mixins/_transition.scss';
+@import 'mixins/_bem.scss';
 
 // Modules
 @import 'modules/_vars.scss';
