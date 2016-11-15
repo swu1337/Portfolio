@@ -1,0 +1,60 @@
+@include b(form) {
+    width: 65%;
+    margin: 120px auto 50px auto;
+    overflow: hidden;
+    background-color: #fff;
+
+    @include e(wrapper) {
+        width: 45%;
+        margin: 45px auto 0 auto;
+        text-align: left;
+    }
+
+    @include e(label) {
+        display: block;
+        color: $black;
+        font-size: 20px;
+        font-weight: bold;
+        padding: 5px 0px;
+    }
+
+    @include e(submit) {
+        padding: 8px 65px;
+        color: $white;
+        font-size: 18px;
+        background: $dark-grey;
+        text-transform: uppercase;
+        margin-bottom: 30px;
+
+        &:hover {
+            background-color: $orange;
+            cursor: pointer;
+        }
+    }
+
+    @include e(input) {
+        font: {
+            size: 18px;
+        }
+
+        display: block;
+        color: $black;
+        width: 100%;
+        border: 2px solid $dark-grey;
+        padding: 8px 4%;
+        margin-bottom: 10px;
+
+        @include m(message) {
+            resize: none;
+            margin-bottom: 25px;
+        }
+
+        @include m(success) {
+            border: 2px solid $success-green;
+        }
+
+        @include m(error) {
+            border: 2px solid $error-red;
+        }
+    }
+}

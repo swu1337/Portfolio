@@ -1,2 +1,31 @@
-.header {
+@include b(header) {
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+    background: {
+        image: url(../img/backgroundpicture.png);
+        size: cover;
+        repeat: no-repeat;
+    }
+
+    @include e(heading) {
+        color: white;
+        font-size: 6.5em;
+        text-align: center;
+        margin: 0;
+
+        &-group {
+            width: 43%;
+            margin: 200px auto;
+        }
+    }
+
+    @include e(subtitle) {
+        display: block;
+        color: white;
+        font-size: 2.4em;
+        text-align: center;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
 }

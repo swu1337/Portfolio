@@ -1,0 +1,80 @@
+@include b(main-section) {
+    width: 100%;
+    overflow: hidden;
+    text-align: center;
+    padding: 35px 0 60px 0;
+
+    @include e(heading) {
+        font-size: 3.7em;
+        text-align: center;
+        padding-top: 10px;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+
+    @include e(icn) {
+        margin: 0px auto 35px auto;
+        width: 150px;
+        height: 150px;
+        border: {
+            width: 1px;
+            style: solid;
+            color: $dark-grey;
+            radius: 50%;
+        }
+
+        &-image {
+            font-size: 5em;
+            margin: {
+                top: 10px;
+            }
+        }
+    }
+
+    @include e(info) {
+        float: left;
+        width: 33%;
+        margin-top: 40px;
+
+        &-text {
+            text-align: center;
+            padding: 0px 50px;
+            font-size: 18px;
+        }
+    }
+
+    @include e(list) {
+        width: 75%;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-content: flex-start;
+        margin: 50px auto 0 auto;
+        list-style: none;
+
+        &-item {
+            width: 175px;
+            height: 175px;
+            margin: 10px;
+        }
+
+        &-image {
+            display: block;
+            width: 175px;
+            height: auto;
+            max-height: 175px;
+        }
+    }
+
+    @include m(light-grey) {
+        background: {
+            color: $light-grey;
+        }
+    }
+
+    @include m(grey) {
+        background: {
+            color: $grey;
+        }
+    }
+}
